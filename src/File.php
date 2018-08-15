@@ -2,8 +2,9 @@
 
 namespace Suitcore\File;
 
-use Symfony\Component\HttpFoundation\File\File as FileSystem;
+use Illuminate\Support\Facades\Storage;
 use Suitcore\File\Contracts\FileInterface as FileContract;
+use Symfony\Component\HttpFoundation\File\File as FileSystem;
 
 class File extends FileSystem implements FileContract
 {
